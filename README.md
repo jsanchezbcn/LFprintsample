@@ -7,9 +7,9 @@ The sample is considering the source PDF as a blueprint. It tries to minimize th
 
 There is a sample Arch D size blueprint PDF and two different methods to print it.
 
-First one is using UIPrintInteractionController and printingItem. The control in this case is limited but the integration is easy.
+1. Using UIPrintInteractionController and printingItem. The control in this case is limited but the integration is easy.
 
-Second one is using a UIPrintPageRenderer, so you have a full control on how the PDF will be printed on the paper. I recommend to use this method. 
+2. Using a UIPrintPageRenderer, so you have a full control on how the PDF will be printed on the paper. I recommend to use this method. 
 
 On this case when printing a D size 24x36inches, the result will be like:
 
