@@ -13,11 +13,11 @@ Second one is using a UIPrintPageRenderer, so you have a full control on how the
 
 On this case when printing a D size 24x36inches, the result will be like:
 
--Printing on a 36inches roll: Printed landscape and no scaling.
--Printing on a 24inches roll: Printed portrait and no scaling.
--Printing to a 17inches roll: Printed in portrait at 50% scale and with a "Halfsize" watermark.
--Printing on a B size sheet: Printed in portrait at 50% scale with a "halfsize" watermark.
--Printing on a A size sheet: will be printed scale to sheet.
+* Printing on a 36inches roll: Printed landscape and no scaling.
+* Printing on a 24inches roll: Printed portrait and no scaling.
+* Printing to a 17inches roll: Printed in portrait at 50% scale and with a "Halfsize" watermark.
+* Printing on a B size sheet: Printed in portrait at 50% scale with a "halfsize" watermark.
+* Printing on a A size sheet: will be printed scale to sheet.
 
 
 
