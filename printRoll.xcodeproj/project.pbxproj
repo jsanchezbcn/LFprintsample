@@ -22,6 +22,8 @@
 		2AAF06CD193F1B410083CC28 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AAF06AC193F1B400083CC28 /* UIKit.framework */; };
 		2AAF06D5193F1B410083CC28 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2AAF06D3193F1B410083CC28 /* InfoPlist.strings */; };
 		2AAF06D7193F1B410083CC28 /* printRollTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF06D6193F1B410083CC28 /* printRollTests.m */; };
+		2AAF06E1193F1B960083CC28 /* Dsize.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2AAF06E0193F1B960083CC28 /* Dsize.pdf */; };
+		2AAF06E8193F22340083CC28 /* PRPageRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF06E3193F22340083CC28 /* PRPageRenderer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,9 @@
 		2AAF06D2193F1B410083CC28 /* printRollTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "printRollTests-Info.plist"; sourceTree = "<group>"; };
 		2AAF06D4193F1B410083CC28 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2AAF06D6193F1B410083CC28 /* printRollTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = printRollTests.m; sourceTree = "<group>"; };
+		2AAF06E0193F1B960083CC28 /* Dsize.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Dsize.pdf; sourceTree = "<group>"; };
+		2AAF06E2193F22340083CC28 /* PRPageRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRPageRenderer.h; sourceTree = "<group>"; };
+		2AAF06E3193F22340083CC28 /* PRPageRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRPageRenderer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +119,8 @@
 		2AAF06AE193F1B400083CC28 /* printRoll */ = {
 			isa = PBXGroup;
 			children = (
+				2AAF06E2193F22340083CC28 /* PRPageRenderer.h */,
+				2AAF06E3193F22340083CC28 /* PRPageRenderer.m */,
 				2AAF06B7193F1B400083CC28 /* PRAppDelegate.h */,
 				2AAF06B8193F1B400083CC28 /* PRAppDelegate.m */,
 				2AAF06BA193F1B400083CC28 /* Main_iPhone.storyboard */,
@@ -129,6 +136,7 @@
 		2AAF06AF193F1B400083CC28 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2AAF06E0193F1B960083CC28 /* Dsize.pdf */,
 				2AAF06B0193F1B400083CC28 /* printRoll-Info.plist */,
 				2AAF06B1193F1B400083CC28 /* InfoPlist.strings */,
 				2AAF06B4193F1B400083CC28 /* main.m */,
@@ -236,6 +244,7 @@
 				2AAF06C4193F1B400083CC28 /* Images.xcassets in Resources */,
 				2AAF06BC193F1B400083CC28 /* Main_iPhone.storyboard in Resources */,
 				2AAF06B3193F1B400083CC28 /* InfoPlist.strings in Resources */,
+				2AAF06E1193F1B960083CC28 /* Dsize.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +265,7 @@
 			files = (
 				2AAF06B9193F1B400083CC28 /* PRAppDelegate.m in Sources */,
 				2AAF06C2193F1B400083CC28 /* PRViewController.m in Sources */,
+				2AAF06E8193F22340083CC28 /* PRPageRenderer.m in Sources */,
 				2AAF06B5193F1B400083CC28 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

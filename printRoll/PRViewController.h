@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PRViewController : UIViewController
+@interface PRViewController : UIViewController<UIPrintInteractionControllerDelegate>{
 
+    NSURL *_pdfURL;
+    CGPDFDocumentRef _document;
+    CGPDFPageRef _docPageRef;
+    float _width,_height;
+}
+
+@property (weak, nonatomic) IBOutlet UIButton *printButton;
 @end
