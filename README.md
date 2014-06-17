@@ -20,7 +20,7 @@ On this case when printing a D size 24x36inches, the result will be like:
 * Printing on a A size sheet: will be printed scale to sheet.
 
 
-
+There is available a version of this code made on [Swift](http://github/jsanchezbcn/LFprintsampleSwift). 
 
 
 
