@@ -1,25 +1,57 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5023" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2rM-NL-CSW">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--View Controller-->
+        <scene sceneID="cQo-ju-yl5">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="PRViewController" sceneMemberID="viewController">
+                <viewController id="2rM-NL-CSW" customClass="PRViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="d3Q-MA-Bfq"/>
+                        <viewControllerLayoutGuide type="bottom" id="C6b-Yu-fRX"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="r7Q-LN-VTG">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pp5-cY-qVd">
+                                <rect key="frame" x="61" y="810" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Print">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="print:" destination="2rM-NL-CSW" eventType="touchUpInside" id="hch-IU-Ntd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Op-Vl-SYa">
+                                <rect key="frame" x="635" y="810" width="105" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Advanced Print">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="intantPrint:" destination="2rM-NL-CSW" eventType="touchUpInside" id="gBh-8N-Y2b"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="C6b-Yu-fRX" firstAttribute="top" secondItem="4Op-Vl-SYa" secondAttribute="bottom" constant="184" id="32n-G3-gpq"/>
+                            <constraint firstItem="C6b-Yu-fRX" firstAttribute="top" secondItem="pp5-cY-qVd" secondAttribute="bottom" constant="184" id="3YT-hM-ntz"/>
+                            <constraint firstItem="pp5-cY-qVd" firstAttribute="leading" secondItem="r7Q-LN-VTG" secondAttribute="leading" constant="61" id="cay-6L-AVE"/>
+                            <constraint firstAttribute="trailing" secondItem="4Op-Vl-SYa" secondAttribute="trailing" constant="28" id="gjv-9L-SHQ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="printButton" destination="pp5-cY-qVd" id="PZ2-d1-b5f"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gTj-bJ-8dV" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1332" y="-148"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

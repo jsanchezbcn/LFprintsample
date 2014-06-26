@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5V-er-D3o">
-                                <rect key="frame" x="61" y="476" width="32" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5V-er-D3o">
+                                <rect key="frame" x="61" y="354" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Print">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -26,8 +26,8 @@
                                     <action selector="print:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vEV-pR-63h"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTR-mA-Gdq">
-                                <rect key="frame" x="195" y="476" width="105" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTR-mA-Gdq">
+                                <rect key="frame" x="187" y="354" width="105" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Advanced Print">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -38,6 +38,12 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="MTR-mA-Gdq" secondAttribute="bottom" constant="184" id="1st-gL-hIZ"/>
+                            <constraint firstAttribute="trailing" secondItem="MTR-mA-Gdq" secondAttribute="trailing" constant="28" id="ZqZ-EZ-9iF"/>
+                            <constraint firstItem="D5V-er-D3o" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="61" id="faE-yG-hgo"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="D5V-er-D3o" secondAttribute="bottom" constant="184" id="un9-SU-AYH"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="printButton" destination="D5V-er-D3o" id="Djw-fG-9Hi"/>
@@ -45,6 +51,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="44" y="68"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
